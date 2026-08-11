@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en" data-theme="calm">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Typography, themes, palette tokens, and interface elements shared across CScience research software."
+    />
+    <meta name="theme-color" content="#F7F8FA" />
+    <title>Style System · CScience</title>
+    <link rel="stylesheet" href="./css/cscience.css" />
+    <script src="./js/theme.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="site-identity" href="./index.html" aria-label="CScience home">
+        <span class="identity-origin" aria-hidden="true"></span>
+        <span>
+          <strong>CScience</strong>
+          <small>Scientific Computing &amp; Research Software</small>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="./index.html">Organization</a>
+        <a href="#themes">Themes</a>
+        <a href="#elements">Elements</a>
+        <a href="#palette" aria-current="page">Style system</a>
+      </nav>
+
+      <div class="theme-control" role="group" aria-label="Preview theme">
+        <span class="theme-label">Theme</span>
+        <button type="button" data-theme-option="calm" aria-pressed="true">
+          <span class="theme-dot calm-dot" aria-hidden="true"></span>
+          <span>Calm</span>
+        </button>
+        <button type="button" data-theme-option="studio" aria-pressed="false">
+          <span class="theme-dot studio-dot" aria-hidden="true"></span>
+          <span>Studio</span>
+        </button>
+        <button type="button" data-theme-option="future" aria-pressed="false">
+          <span class="theme-dot future-dot" aria-hidden="true"></span>
+          <span>Future</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="style-hero section-shell" aria-labelledby="style-title">
+        <div>
+          <p class="eyebrow"><span>net.cscience</span> · Shared interface foundation</p>
+          <h1 id="style-title">CScience Style System</h1>
+          <p class="hero-lead">
+            The shared typography, themes, geometry, tokens, and interface elements used
+            across CScience research software.
+          </p>
+        </div>
+        <div class="style-summary" aria-label="Style system summary">
+          <div><span>03</span><small>theme families</small></div>
+          <div><span>20</span><small>approved accent tokens</small></div>
+          <div><span>02</span><small>type families</small></div>
+        </div>
+      </section>
+
+      <section class="section-shell section-block" id="themes" aria-labelledby="themes-title">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">01 · Themes</p>
+            <h2 id="themes-title">Three modes for different research contexts.</h2>
+          </div>
+          <p>
+            The header switch changes the complete page system. Each specimen below
+            remains fixed so the three approved directions can be compared directly.
+          </p>
+        </div>
+
+        <div class="theme-specimens">
+          <article class="theme-specimen specimen-calm">
+            <div class="specimen-top"><span>Light / Calm</span><code>primary workspace</code></div>
+            <div class="mini-window">
+              <div class="mini-sidebar"><i></i><i></i><i></i><i></i></div>
+              <div class="mini-content">
+                <div class="mini-title"></div><div class="mini-copy"></div>
+                <div class="mini-chart"><i></i><i></i><i></i><i></i><i></i></div>
+                <div class="mini-row"><i></i><i></i><i></i></div>
+              </div>
+            </div>
+            <p>Bright, quiet, Fluent-inspired, and lightly elevated.</p>
+          </article>
+          <article class="theme-specimen specimen-studio">
+            <div class="specimen-top"><span>Dark / Studio</span><code>long sessions</code></div>
+            <div class="mini-window">
+              <div class="mini-sidebar"><i></i><i></i><i></i><i></i></div>
+              <div class="mini-content">
+                <div class="mini-title"></div><div class="mini-copy"></div>
+                <div class="mini-chart"><i></i><i></i><i></i><i></i><i></i></div>
+                <div class="mini-row"><i></i><i></i><i></i></div>
+              </div>
+            </div>
+            <p>Technical, calm, professional, with restrained contrast.</p>
+          </article>
+          <article class="theme-specimen specimen-future">
+            <div class="specimen-top"><span>Dark / Futuristic</span><code>information space</code></div>
+            <div class="mini-window">
+              <div class="mini-sidebar"><i></i><i></i><i></i><i></i></div>
+              <div class="mini-content">
+                <div class="mini-title"></div><div class="mini-copy"></div>
+                <div class="mini-chart"><i></i><i></i><i></i><i></i><i></i></div>
+                <div class="mini-row"><i></i><i></i><i></i></div>
+              </div>
+            </div>
+            <p>Near-black depth and controlled scientific luminosity.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell section-block" id="typography" aria-labelledby="typography-title">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">02 · Typography</p>
+            <h2 id="typography-title">Geometric clarity and technical precision.</h2>
+          </div>
+          <p>Sora carries the interface. IBM Plex Mono carries identifiers, metrics, coordinates, and code-like values.</p>
+        </div>
+
+        <div class="type-system">
+          <article class="type-primary">
+            <div class="type-meta"><span>Sora</span><code>400 · 500 · 600 · 700</code></div>
+            <p class="type-sample">Information spaces become visible through structure.</p>
+            <div class="type-scale">
+              <span class="scale-display">Display / 64</span>
+              <span class="scale-heading">Section heading / 36</span>
+              <span class="scale-body">Body text / 15 — precise, calm, and readable during long research sessions.</span>
+            </div>
+          </article>
+          <article class="type-technical">
+            <div class="type-meta"><span>IBM Plex Mono</span><code>400 · 500</code></div>
+            <div class="technical-sample">
+              <code>context://four-kitchen/violet</code>
+              <code>coordinate [14.20, 2.60, −8.40]</code>
+              <code>similarity 0.8734 · rank 04 / 30</code>
+              <code>Context × Coordinate × Feature</code>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell section-block" id="elements" aria-labelledby="elements-title">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">03 · Element overview</p>
+            <h2 id="elements-title">Compact controls for scientific software.</h2>
+          </div>
+          <p>
+            Rectangular surfaces, subtle radii, restrained borders, precise alignment,
+            and compact labels form the shared interaction language.
+          </p>
+        </div>
+
+        <div class="element-grid">
+          <article class="element-panel">
+            <div class="element-title"><span>Buttons</span><code>actions</code></div>
+            <div class="element-demo button-demo">
+              <button class="button primary" type="button">Run retrieval</button>
+              <button class="button secondary" type="button">Preview</button>
+              <button class="button quiet" type="button">Cancel</button>
+              <button class="icon-button" type="button" aria-label="More options">•••</button>
+            </div>
+          </article>
+
+          <article class="element-panel">
+            <div class="element-title"><span>Tags &amp; status</span><code>metadata</code></div>
+            <div class="element-demo tag-demo">
+              <span class="tag tag-accent">Indexed</span>
+              <span class="tag">3D scene</span>
+              <span class="tag">CLIP</span>
+              <span class="status-line"><i></i> Ready</span>
+              <span class="status-line warning"><i></i> Processing</span>
+            </div>
+          </article>
+
+          <article class="element-panel">
+            <div class="element-title"><span>Fields</span><code>input</code></div>
+            <div class="element-demo field-demo">
+              <label>
+                <span>Semantic query</span>
+                <input type="text" value="red industrial robot" aria-label="Semantic query example" />
+              </label>
+              <label>
+                <span>Context</span>
+                <select aria-label="Context example"><option>Four Kitchen</option></select>
+              </label>
+            </div>
+          </article>
+
+          <article class="element-panel">
+            <div class="element-title"><span>Selection</span><code>segmented control</code></div>
+            <div class="element-demo selection-demo" role="group" aria-label="Example result view">
+              <button type="button" aria-pressed="true">Ranked</button>
+              <button type="button" aria-pressed="false">Spatial</button>
+              <button type="button" aria-pressed="false">Metrics</button>
+            </div>
+          </article>
+
+          <article class="element-panel element-wide">
+            <div class="element-title"><span>Data table</span><code>results</code></div>
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead><tr><th>Rank</th><th>Coordinate</th><th>Context</th><th>Similarity</th><th>Status</th></tr></thead>
+                <tbody>
+                  <tr><td><code>01</code></td><td><code>[14.2, 2.6, −8.4]</code></td><td>Four Kitchen</td><td><code>0.8734</code></td><td><span class="tag tag-accent">selected</span></td></tr>
+                  <tr><td><code>02</code></td><td><code>[13.8, 2.4, −8.1]</code></td><td>Four Kitchen</td><td><code>0.8612</code></td><td><span class="tag">indexed</span></td></tr>
+                  <tr><td><code>03</code></td><td><code>[09.1, 1.9, −3.7]</code></td><td>Four Kitchen</td><td><code>0.8248</code></td><td><span class="tag">indexed</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="element-panel element-code">
+            <div class="element-title"><span>Technical block</span><code>mono</code></div>
+            <pre><code>ISources sources = context.AvailableSources;
+
+await foreach (ISource source in
+    sources.ResolveSourcesAsync(token))
+{
+    await index.AddAsync(source, token);
+}</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell section-block" id="palette" aria-labelledby="palette-title">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">04 · Design tokens</p>
+            <h2 id="palette-title">Approved palette values.</h2>
+          </div>
+          <p>Product identity should select and combine these shared colors rather than introduce unrelated accent systems.</p>
+        </div>
+
+        <div class="token-tables">
+          <article class="token-family">
+            <div class="token-family-title"><h3>Light / Calm</h3><span>06 tokens</span></div>
+            <ul class="token-list">
+              <li><i style="--swatch:#D9F3F2"></i><span>Calm Mint</span><code>#D9F3F2</code></li>
+              <li><i style="--swatch:#C8E6F9"></i><span>Calm Sky</span><code>#C8E6F9</code></li>
+              <li><i style="--swatch:#D7CCFF"></i><span>Calm Lilac</span><code>#D7CCFF</code></li>
+              <li><i style="--swatch:#FF8A80"></i><span>Calm Coral</span><code>#FF8A80</code></li>
+              <li><i style="--swatch:#F1D6C9"></i><span>Calm Sand</span><code>#F1D6C9</code></li>
+              <li><i style="--swatch:#E6E6E8"></i><span>Calm Stone</span><code>#E6E6E8</code></li>
+            </ul>
+          </article>
+          <article class="token-family">
+            <div class="token-family-title"><h3>Dark / Studio</h3><span>07 tokens</span></div>
+            <ul class="token-list">
+              <li><i style="--swatch:#00BDB8"></i><span>Studio Teal</span><code>#00BDB8</code></li>
+              <li><i style="--swatch:#5A49FF"></i><span>Studio Blue</span><code>#5A49FF</code></li>
+              <li><i style="--swatch:#6E4BFF"></i><span>Studio Violet</span><code>#6E4BFF</code></li>
+              <li><i style="--swatch:#FF5A4F"></i><span>Studio Coral</span><code>#FF5A4F</code></li>
+              <li><i style="--swatch:#FFB038"></i><span>Studio Amber</span><code>#FFB038</code></li>
+              <li><i style="--swatch:#BFC3C8"></i><span>Studio Gray</span><code>#BFC3C8</code></li>
+              <li><i style="--swatch:#8A8F98"></i><span>Studio Slate</span><code>#8A8F98</code></li>
+            </ul>
+          </article>
+          <article class="token-family">
+            <div class="token-family-title"><h3>Dark / Futuristic</h3><span>07 tokens</span></div>
+            <ul class="token-list">
+              <li><i style="--swatch:#00F5FF"></i><span>Futuristic Teal</span><code>#00F5FF</code></li>
+              <li><i style="--swatch:#3D00FF"></i><span>Futuristic Blue</span><code>#3D00FF</code></li>
+              <li><i style="--swatch:#7A00FF"></i><span>Futuristic Violet</span><code>#7A00FF</code></li>
+              <li><i style="--swatch:#C600FF"></i><span>Futuristic Magenta</span><code>#C600FF</code></li>
+              <li><i style="--swatch:#39FF6A"></i><span>Futuristic Green</span><code>#39FF6A</code></li>
+              <li><i style="--swatch:#0B1324"></i><span>Futuristic Ink</span><code>#0B1324</code></li>
+              <li><i style="--swatch:#070B12"></i><span>Futuristic Black</span><code>#070B12</code></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <div class="footer-identity">
+        <span class="identity-origin" aria-hidden="true"></span>
+        <div><strong>CScience</strong><span>Shared style system</span></div>
+      </div>
+      <div class="footer-links">
+        <a href="./index.html">Organization</a>
+        <a href="https://github.com/net-cscience" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <a href="#content">Back to top ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
